@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/trends-2/node_modules
 /.pnp
 .pnp.js
 
