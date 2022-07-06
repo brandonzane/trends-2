@@ -7,12 +7,14 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>African Trends</title>
+        <title>African Business Ideas | African Trends</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
       <Hero />
+
+      {/* Posts */}
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "../public/trends-banner.png";
+import Banner from "../public/2.png";
 
 function Hero() {
   return (
-    <div className="flex justify-between items-center border-black py-10 lg:py-0">
+    <div className="flex justify-between items-center bg-lime-50 border-black py-10">
       <div className="px-10 py-20 space-y-5">
         <h1 className="text-6xl max-w-xl font-serif">
           <span className="underline decoration-black decoration-4">
@@ -18,7 +18,7 @@ function Hero() {
       </div>
 
       <img
-        className="hidden md:inline-flex h-32 lg:h-full"
+        className="hidden md:inline-flex h-32 lg:h-full px-10"
         src={Banner.src}
         alt=""
       />
