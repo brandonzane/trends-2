@@ -3,10 +3,10 @@ import Banner from "../public/2.png";
 
 function Hero() {
   return (
-    <div className="flex justify-between items-center bg-lime-50 border-black py-10">
-      <div className="px-10 py-20 space-y-5">
-        <h1 className="text-6xl max-w-xl font-serif">
-          <span className="underline decoration-black decoration-4">
+    <div className="flex justify-between items-center bg-lime-50 border-y border-black py-10 lg:py-0">
+      <div className="px-10 space-y-5 text-center md:text-left">
+        <h1 className="text-7xl max-w-xl font-serif -tracking-wide">
+          <span className="font-bold underline decoration-black decoration-4">
             African Trends
           </span>{" "}
           is a place to read and connect
