@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import Logo from "../public/african-trends.png";
 
 function Header() {
@@ -13,43 +13,28 @@ function Header() {
             <div className="flex items-center mx-20 justify-between w-full">
               <div className="flex justify-center items-center flex-shrink mx-auto">
                 <h1 className="font-bold text-xl cursor-pointer">
-                  <img className="w-60 object-contain" src={Logo.src} alt="" />
+                  <Link href="/">
+                    <img
+                      className="w-60 object-contain"
+                      src={Logo.src}
+                      alt="african  trends logo"
+                    />
+                  </Link>
                 </h1>
               </div>
               <div className="hidden md:block mx-auto">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link
-                    activeClass="Home"
-                    to="about"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-green-600 font-semibold px-3 py-2 text-md hover:text-gray-600"
-                  >
-                    Home
-                  </Link>
+                  <div className="cursor-pointer text-green-600 font-semibold px-3 py-2 text-md hover:text-gray-600">
+                    <Link href="/">Home</Link>
+                  </div>
 
-                  <Link
-                    activeClass="about"
-                    to="about"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-semibold"
-                  >
+                  <div className="cursor-pointer text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-semibold">
                     Our Story
-                  </Link>
+                  </div>
 
-                  <Link
-                    activeClass="Home"
-                    to="about"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer border border-green-600 hover:bg-green-600 text-green-600 hover:text-white px-3 py-3 rounded-full text-sm font-semibold"
-                  >
+                  <div className="cursor-pointer border border-green-600 hover:bg-green-600 text-green-600 hover:text-white px-3 py-3 rounded-full text-sm font-semibold">
                     Get Started
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,51 +101,19 @@ function Header() {
                 ref={ref}
                 className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
               >
-                <Link
-                  href="/home"
-                  activeClass="home"
-                  to="home"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <div className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Home
-                </Link>
-                <Link
-                  href="/about"
-                  activeClass="about"
-                  to="about"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                </div>
+                <div className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   our Story
-                </Link>
+                </div>
 
-                <Link
-                  href="/work"
-                  activeClass="work"
-                  to="work"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <div className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Get Started
-                </Link>
-                <Link
-                  href="/services"
-                  activeClass="services"
-                  to="services"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                </div>
+                <div className="cursor-pointer hover:bg-green-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Contact
-                </Link>
+                </div>
               </div>
             </div>
           )}
