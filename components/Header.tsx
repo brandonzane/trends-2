@@ -29,7 +29,7 @@ function Header() {
                   </div>
 
                   <div className="cursor-pointer text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-semibold">
-                    Our Story
+                    <Link href="/about">Our Story</Link>
                   </div>
 
                   <div className="cursor-pointer border border-green-600 hover:bg-green-600 text-green-600 hover:text-white px-3 py-3 rounded-full text-sm font-semibold">

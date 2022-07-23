@@ -20,7 +20,7 @@ function Hero() {
       <img
         className="hidden md:inline-flex h-32 lg:h-full px-10"
         src={Banner.src}
-        alt=""
+        alt="african trends lion logo"
       />
     </div>
   );
