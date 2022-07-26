@@ -7,6 +7,11 @@
   resolved "https://registry.npmjs.org/@headlessui/react/-/react-1.6.4.tgz"
   integrity sha512-0yqz1scwbFtwljmbbKjXsSGl5ABEYNICVHZnMCWo0UtOZodo2Tpu94uOVgCRjRZ77l2WcTi2S0uidINDvG7lsA==
 
+"@heroicons/react@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.6.tgz#35dd26987228b39ef2316db3b1245c42eb19e324"
+  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
+
 "@next/env@12.1.6":
   version "12.1.6"
   resolved "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
@@ -110,6 +115,11 @@
   dependencies:
     "@sanity/block-content-to-hyperscript" "^2.0.10"
     prop-types "^15.6.2"
+
+"@sanity/cli@^2.30.2":
+  version "2.30.2"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.30.2.tgz#a91336f831c613c4e0f140af124ab7ced842e2ca"
+  integrity sha512-kS6xH38TWCH0yDpzhURghsacxjUcoDYN/R8xSutEkY70FvYm0x7/bfRuOiFYfdR4wrSE9LAu+50NsCmD3L39Ww==
 
 "@sanity/client@^3.2.0", "@sanity/client@^3.3.0", "@sanity/client@^3.3.2":
   version "3.3.2"

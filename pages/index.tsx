@@ -10,9 +10,9 @@ interface Props {
 }
 
 const Home = ({ posts }: Props) => {
-  console.log(posts);
+  // console.log(posts);
   return (
-    <div>
+    <div className="">
       <Head>
         <title>African Business Ideas | African Trends</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,7 +22,7 @@ const Home = ({ posts }: Props) => {
       <Hero />
 
       {/* Posts */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
         {posts.map((post) => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
             <div className="border rounded-lg group cursor-pointer overflow-hidden shadow-lg shadow-gray-300">

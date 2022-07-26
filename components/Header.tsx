@@ -33,7 +33,7 @@ function Header() {
                   </div>
 
                   <div className="cursor-pointer border border-green-600 hover:bg-green-600 text-green-600 hover:text-white px-3 py-3 rounded-full text-sm font-semibold">
-                    Get Started
+                    <Link href="/getstarted">Get Started</Link>
                   </div>
                 </div>
               </div>
